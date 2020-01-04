@@ -28,7 +28,7 @@ pylint:
 test:
 	tox
 
-dist:
+dist: clean
 	python setup.py sdist bdist_wheel
 
 upload:
