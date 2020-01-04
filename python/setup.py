@@ -8,6 +8,8 @@ Description: Python packaging for wxpusher.
 """
 from setuptools import setup
 
+from wxpusher import __version__
+
 CLASSIFIERS = [
     'Development Status :: 4 - Beta',
     'Intended Audience :: Developers',
@@ -49,7 +51,7 @@ def readme():
 
 
 setup(name='wxpusher',
-      version='0.0.4',
+      version=__version__,
       description=DESCRIPTION,
       long_description=readme(),
       long_description_content_type='text/markdown',

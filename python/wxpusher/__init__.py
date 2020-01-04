@@ -15,3 +15,5 @@ __all__ = [
     'WxPusherException',
     'WxPusherNoneTokenException'
 ]
+
+__version__ = '0.0.5'
