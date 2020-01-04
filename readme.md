@@ -111,3 +111,21 @@ result, err := wxpusher.SendMessage(wxpusher.Message{
 messageId := 600
 result, err := wxpusher.QueryMessageStatus(messageId)
 ```
+
+## Python 版本
+
+### 安装
+
+```shell
+pip install -U wxpusher
+```
+
+### 使用
+
+```python
+from wxpusher import WxPusher
+WxPusher.send_message('<content>', '<uids>', '<appToken>')  # 发送消息
+WxPusher.query_message('<messageId>')  # 查询消息发送状态
+WxPusher.create_qrcode('<extra>', '<validTime>', '<appToken>')  # 创建带参数的二维码
+WxPusher.query_user('<page>', '<page_size>', '<appToken>')  # 查询关注APP的微信用户列表
+```
